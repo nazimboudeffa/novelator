@@ -1,0 +1,21 @@
+{
+  "name": "novelator",
+  "productName": "Novelator",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build_osx": "electron-packager . novelator --platform=darwin --arch=x64 --out .. --overwrite --icon=icon.icns && echo 'Built for OSX'",
+    "build_linux": "electron-packager . novelator --platform=linux  --arch=x64 --out .. --overwrite --icon=icon.ico && echo 'Built for LINUX'",
+    "build_win": "electron-packager . novelator --platform=win32  --arch=x64 --out .. --overwrite --icon=icon.ico && echo 'Built for WIN'"
+  },
+  "devDependencies": {
+    "electron": "^5.0.13",
+    "electron-packager": "^13.1.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "fs": "0.0.1-security",
+    "jquery": "^3.5.1"
+  }
+}
